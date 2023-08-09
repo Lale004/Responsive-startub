@@ -174,7 +174,6 @@ h5{
     font-weight: 700;
     font-size: var(--font-size-40);
     line-height: 50px;
-    text-align: center;
 }
 .partners .partners-logos ul{
     display: flex;
@@ -201,6 +200,9 @@ h5{
     margin: 0 auto;
     background-color: var(--dark);
     color: var(--white);
+}
+.partners-text h5{
+    text-align: center !important;
 }
 .section3-4{
     display: flex;

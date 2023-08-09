@@ -1,0 +1,220 @@
+:root{
+    --green: #74C69D;
+    --black: #000;
+    --dark:#212529;
+    --white: #fff;
+    --white-75: #ffffffac;
+    --black-50:#21252980;
+    --black-75:#212529BF;
+    --font-size-20: 20px;
+    --font-size-40: 40px;
+    --font-size-16: 16px;
+    --font-size-15: 15px;
+    --font-size-10: 10px;
+    --font-size-12:12px;
+    --font-size-25:25px;
+    --font-size-30:30px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%; 
+    }
+
+    .menu-container {
+        display: none !important; 
+    }
+
+    .res-nav {
+        display: block; 
+    }
+
+    .hero-text-container {
+        flex-direction: column-reverse;
+        gap: 40px
+    }
+
+    .hero-text-container .hero-text,
+    .hero-text-container .hero-img {
+        width: 100%; 
+    }
+
+    .hero-text-container .hero-img img {
+        order: -1; 
+    }
+    .partners ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:40px !important;
+    }
+    .partners .partners-logos ul li img {
+        width: 150px;
+    }
+    .partners .partners-logos ul li {
+       display: flex;
+       justify-content: center;
+    }
+
+    .card .card-img img {
+        width: 100%;
+    }
+
+    .partners-text p:last-of-type {
+        width: 100%;
+        text-align: center; 
+    }
+
+    .sections .section3-4{
+        gap: 40px; 
+    }
+    .column-reserve{
+        flex-direction: column; 
+    }
+    .column{
+        flex-direction: column-reverse;
+    }
+
+    .section3-4 .section3-4-text,
+    .section3-4 .section3-4-img {
+        width: 100%; 
+    }
+
+    .teams {
+        flex-direction: column; 
+        gap: 30px; 
+    }
+    .card{
+        margin: 0 auto;
+        width: 280px;
+        height: 360px;
+    }
+
+    .card .card-text h1 {
+        width: 100%; 
+        font-size: var(--font-size-30) !important;
+    }
+    .card .card-text p {
+        font-size: var(--font-size-16) !important ; 
+    }
+
+    .footer-text {
+        padding: 20px 0;
+        flex-direction: column; 
+        align-items: center;
+        gap: 20px; 
+        text-align: center; 
+    }
+    
+    .footer-text ul li i{
+        font-size: var(--font-size-20);
+    }
+    .footer-text p{
+        font-size: var(--font-size-20);
+    }
+
+}
+
+
+@media (min-width: 769px) {
+    .container {
+        max-width: 80%; 
+    }
+
+    header ul {
+        display: flex; 
+    }
+
+    .res-nav {
+        display: none;
+    }
+
+    .hero-text-container {
+        flex-direction: row;
+        gap: 120px; 
+        text-align: left; 
+    }
+
+    .hero-text-container .hero-text,
+    .hero-text-container .hero-img {
+        width: calc((100% - 120px) / 2); 
+    }
+
+    .hero-text-container .hero-img img {
+        order: initial; 
+    }
+
+    .partners-text p:last-of-type {
+        width: 411px;
+    }
+
+    .partners .partners-logos ul {
+        justify-content: space-between; 
+        gap: 68px; 
+    }
+
+    .section3-4 {
+        flex-direction: row;
+        gap: 100px; 
+        text-align: left; 
+    }
+
+    .section3-4 .section3-4-text,
+    .section3-4 .section3-4-img {
+        width: calc((100% - 100px) / 2);
+    }
+
+    .section3-4 .section3-4-text button {
+        margin: initial; 
+    }
+
+    .section3-4 .section3-4-text p {
+        text-align: left; 
+    }
+
+    .teams {
+        flex-direction: row; 
+        gap: 47px;
+        text-align: left;
+    }
+
+    .card {
+        width: calc((100% - 3 * 47px) / 4);
+    }
+
+    .card .card-text h1 {
+        width: 100%; 
+        text-align: initial; 
+    }
+
+    .footer-text {
+        flex-direction: row; 
+        gap: 20px;
+        text-align: left; 
+    }
+
+    footer ul {
+        height: initial; 
+        flex-direction: row; 
+        align-items: center;
+    }
+}
+@media (max-width: 1050px) {
+    .teams {
+        flex-direction: column; 
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px; 
+    }
+    .card{
+        margin: 0 auto;
+        width: 280px;
+        height: 320px;
+    }
+    .card .card-text h1{
+        width: max-content;
+    }
+
+}
+

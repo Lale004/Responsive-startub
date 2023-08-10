@@ -16,6 +16,30 @@
     --font-size-30:30px;
 }
 
+@media (max-width: 1050px) {
+    .section3-4 .section3-4-img img{
+        max-width: 100%;
+    }
+    .section3-4-text h5{
+        font-size: var(--font-size-30);
+    }
+    .teams {
+        display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+        gap: 50px; 
+    }
+    .card{
+        margin: 0 auto;
+        width: 280px;
+        height: 320px;
+    }
+    .card .card-text h1{
+        width: max-content;
+    }
+
+
+}
 @media (max-width: 768px) {
     .container {
         max-width: 90%; 
@@ -56,7 +80,7 @@
        display: flex;
        justify-content: center;
     }
-
+    
     .card .card-img img {
         width: 100%;
     }
@@ -96,7 +120,7 @@
 
     .card .card-text h1 {
         width: 100%; 
-        font-size: var(--font-size-30) !important;
+        font-size: var(--font-size-25) !important;
     }
     .card .card-text p {
         font-size: var(--font-size-16) !important ; 
@@ -116,117 +140,11 @@
     .footer-text p{
         font-size: var(--font-size-20);
     }
-
+    .sections{
+    gap:100px;
 }
 
-
-@media (min-width: 769px) {
-    .container {
-        max-width: 80%; 
-    }
-
-    header ul {
-        display: flex; 
-    }
-
-    .res-nav {
-        display: none;
-    }
-
-    .hero-text-container {
-        flex-direction: row;
-        gap: 120px; 
-        text-align: left; 
-    }
-
-    .hero-text-container .hero-text,
-    .hero-text-container .hero-img {
-        width: calc((100% - 120px) / 2); 
-    }
-
-    .hero-text-container .hero-img img {
-        order: initial; 
-    }
-
-    .partners-text p:last-of-type {
-        width: 411px;
-    }
-
-    .partners .partners-logos ul {
-        justify-content: space-between; 
-        gap: 68px; 
-    }
-
-    .section3-4 {
-        flex-direction: row;
-        gap: 100px; 
-        text-align: left; 
-    }
-
-    .section3-4 .section3-4-text,
-    .section3-4 .section3-4-img {
-        width: calc((100% - 100px) / 2);
-    }
-    .section3-4 .section3-4-img img{
-        max-width: 100%;
-    }
-
-    .section3-4 .section3-4-text button {
-        margin: initial; 
-    }
-
-    .section3-4 .section3-4-text p {
-        text-align: left; 
-    }
-
-    .teams {
-        flex-direction: row; 
-        gap: 47px;
-        text-align: left;
-    }
-
-    .card {
-        width: calc((100% - 3 * 47px) / 4);
-    }
-
-    .card .card-text h1 {
-        width: 100%; 
-        text-align: initial; 
-    }
-
-    .footer-text {
-        flex-direction: row; 
-        gap: 20px;
-        text-align: left; 
-    }
-
-    footer ul {
-        height: initial; 
-        flex-direction: row; 
-        align-items: center;
-    }
 }
-@media (max-width: 1050px) {
-    .section3-4 .section3-4-img img{
-        max-width: 100%;
-    }
-    .teams {
-        display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-        gap: 50px; 
-    }
-    .card{
-        margin: 0 auto;
-        width: 280px;
-        height: 320px;
-    }
-    .card .card-text h1{
-        width: max-content;
-    }
-
-}
-
 @media (max-width: 700px) {
     .section3-4 .section3-4-img img{
         max-width: 100%;
@@ -237,6 +155,5 @@
     grid-gap: 20px;
         gap: 50px; 
     }
-
 }
 

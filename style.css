@@ -46,6 +46,7 @@ button{
     width: 100%;
     height:max-content;
     padding-bottom: 80px; 
+    border: 1px solid var(--black);
 }
 header{
   padding-top: 35px;
@@ -206,7 +207,12 @@ h5{
 }
 .section3-4{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap:100px;
+}
+.section3-4 .section3-4-img{
+    align-self: center;
 }
 .section3-4 .section3-4-text{
     width: calc((100% - 100px) / 2);
